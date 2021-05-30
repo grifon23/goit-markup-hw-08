@@ -1,0 +1,36 @@
+.footer {
+  &--bgcolor {
+    background: var(--dark-bg-cl);
+  }
+}
+
+.footer__meta {
+  padding-bottom: 60px;
+}
+
+.footer__flex {
+  display: flex;
+}
+.footer__container {
+  padding-top: 60px;
+}
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--light-bg-cl);
+  text-decoration: none;
+}
+.footer__address {
+  width: 231px;
+}
+.footer__icons {
+  padding-top: 72px;
+  margin-left: 70px;
+}
+.footer__title {
+  margin-bottom: 20px;
+}
+.footer__form {
+  margin-left: 93px;
+  padding-top: 72px;
+}

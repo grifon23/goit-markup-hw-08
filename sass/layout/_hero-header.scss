@@ -1,0 +1,17 @@
+.hero-header {
+  &--border {
+    border-bottom: 1px solid #ececec;
+  }
+}
+.hero-header__nav {
+  display: flex;
+  align-items: center;
+}
+.hero-header__site-nav {
+  margin-left: 93px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.hero-header__menu-contacts {
+  margin-left: auto;
+}

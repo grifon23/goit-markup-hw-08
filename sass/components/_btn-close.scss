@@ -1,0 +1,33 @@
+.btn-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  margin: 8px 8px;
+  cursor: pointer;
+
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  &--bgcolor {
+    background-color: var(--light-bg-cl);
+  }
+  &:hover .btn-close__icon,
+  &:focus .btn-close__icon {
+    fill: var(--accent-cl);
+  }
+}
+.btn-close__icon {
+  width: 18px;
+  height: 18px;
+
+  fill: #000000;
+
+  transition-property: fill;
+  transition-duration: var(--timing-function);
+  transition-timing-function: var(--transition-function);
+}

@@ -1,0 +1,14 @@
+.address {
+  font-style: inherit;
+}
+.address__location {
+  color: var(--light-bg-cl);
+}
+
+.address__contacts {
+  color: var(--alt-footer-text-cl);
+}
+
+.address__list .address__item:not(:last-child) {
+  margin-bottom: 9px;
+}

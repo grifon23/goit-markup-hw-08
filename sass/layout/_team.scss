@@ -1,0 +1,13 @@
+.team {
+  &--bgcolor {
+    background-color: var(--section-cl);
+  }
+}
+.team__indent:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team__card-list {
+  display: flex;
+  flex-wrap: wrap;
+}

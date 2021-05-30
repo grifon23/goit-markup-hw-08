@@ -1,0 +1,36 @@
+.vector {
+  display: flex;
+  flex-wrap: wrap;
+}
+.vector__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.vector__img {
+  display: flex;
+  position: relative;
+}
+.vector__content {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.vector__text {
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  &--color {
+    color: var(--light-bg-cl);
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}
