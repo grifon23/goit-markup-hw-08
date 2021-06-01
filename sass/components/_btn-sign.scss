@@ -1,9 +1,16 @@
+.btn-sign {
+  position: relative;
+}
+
 .btn-sign__content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: start;
   width: 200px;
   height: 50px;
+  padding-right: 29px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+
   background-color: var(--accent-cl);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -11,6 +18,7 @@
   border: transparent;
   cursor: pointer;
 
+  padding: 10px 32px;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
@@ -19,8 +27,12 @@
   color: var(--light-bg-cl);
 }
 .btn-sign__icon {
-  margin-left: 10px;
   width: 24px;
   height: 24px;
+  margin-left: 10px;
   fill: var(--light-bg-cl);
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }

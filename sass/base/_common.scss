@@ -5,6 +5,7 @@ html {
 ::before,
 ::after {
   box-sizing: inherit;
+  outline: 1px solid red;
 }
 h1,
 h2,
@@ -20,13 +21,10 @@ body {
   color: var(--main-text-cl);
   background: #ffffff;
 }
-
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .list {
   padding: 0;
@@ -49,9 +47,15 @@ body {
   visibility: hidden;
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
+
 .link {
   color: inherit;
   text-decoration: none;

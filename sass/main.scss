@@ -1,5 +1,6 @@
 @import "./utils/variablea";
 @import "./base/common";
+@import "./base/container";
 
 @import "./components/backdrop";
 @import "./components/modal";
@@ -14,14 +15,13 @@
 @import "./components/menu";
 @import "./components/menu-contacts";
 
-@import "./layout/main-page";
 @import "./layout/hero-section";
 @import "./components/btn-hero";
 
 @import "./layout/future";
 
 @import "./components/title";
-@import "./layout/vector";
+@import "./layout/engaged";
 @import "./layout/team";
 @import "./components/card-block";
 @import "./components/social-icons";

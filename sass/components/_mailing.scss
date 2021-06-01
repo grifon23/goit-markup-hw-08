@@ -9,17 +9,18 @@
 }
 
 .mailing__e-mail {
-  display: flex;
-  align-items: flex-end;
-  height: 86px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: flex-end;
+    text-align: start;
+  }
 }
-.mailing__signature {
-  display: inline-block;
-  margin-bottom: 20px;
-}
+
 .mailing__input {
   width: 358px;
   height: 50px;
+  margin-bottom: 20px;
   padding-left: 16px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);

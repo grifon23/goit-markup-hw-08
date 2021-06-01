@@ -1,23 +1,32 @@
-.vector {
+.engaged {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+.engaged__vector {
   display: flex;
   flex-wrap: wrap;
 }
-.vector__item {
+.engaged__item {
   &:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (min-width: 1200px) {
+      margin: 0px 30px 0px 0px;
+      width: calc((100% - 3 * 30px) / 3);
+      width: 370px;
+    }
   }
 }
-.vector__img {
+.engaged__img {
   display: flex;
   position: relative;
 }
-.vector__content {
+.engaged__content {
   bottom: 0;
   position: absolute;
   width: 100%;
 }
 
-.vector__text {
+.engaged__text {
   text-align: center;
   padding-top: 27px;
   padding-bottom: 27px;
