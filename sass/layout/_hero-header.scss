@@ -6,12 +6,28 @@
 .hero-header__nav {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 767.98px) {
+    height: 60px;
+  }
 }
 .hero-header__site-nav {
   margin-left: 93px;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
 }
 .hero-header__menu-contacts {
   margin-left: auto;
+}
+
+.menu-btn {
+  width: 40px;
+  height: 40px;
+  background-color: violet;
+}
+.icon-menu-btn {
+  stroke: #000;
 }

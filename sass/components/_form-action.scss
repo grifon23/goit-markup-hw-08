@@ -30,6 +30,11 @@
   letter-spacing: 0.03em;
   color: var(--main-text-cl);
 
+  @media screen and (max-width: 1199.9px) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+
   &::before {
     content: "";
     display: inline-block;

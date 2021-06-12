@@ -1,9 +1,8 @@
 .modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 580px;
+
   max-height: 100vh;
 
   transform: translate(-50%, -50%) scale(1);
@@ -16,6 +15,16 @@
 
   .is-hidden & {
     transform: translate(-50%, -50%) scale(0.1);
+  }
+
+  @media screen and (max-width: 1199.9px) {
+    max-width: 450px;
+    height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 580px;
   }
 }
 .modal__form-content {

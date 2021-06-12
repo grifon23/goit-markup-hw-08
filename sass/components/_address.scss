@@ -1,5 +1,8 @@
 .address {
   font-style: inherit;
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 60px;
+  }
 }
 .address__location {
   color: var(--light-bg-cl);
