@@ -17,8 +17,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!--Головна група навігації сторінки-->
-    <!-- <header class="hero-header hero-header--border">
+    <header class="hero-header hero-header--border">
       <div class="container hero-header__nav">
         <a class="logo logo--black" href="./index.html"
           ><span class="logo__cl">Web</span> Studio</a
@@ -37,9 +36,9 @@
               <a class="link menu__link" href="">Контакты</a>
             </li>
           </ul>
-        </nav> -->
-    <!--Контакти-->
-    <!-- <ul class="list menu-contacts hero-header__menu-contacts">
+        </nav>
+        <!--Контакти-->
+        <ul class="list menu-contacts hero-header__menu-contacts">
           <li class="menu-contacts__item item-icon">
             <a
               class="link menu-contacts__link"
@@ -60,8 +59,73 @@
             >
           </li>
         </ul>
+        <button
+          type="button"
+          class="menu-btn list"
+          aria-controls="menu-container"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg
+            class="icon-menu"
+            width="40"
+            height="40"
+            aria-label="переключатель мобильного меню"
+          >
+            <use
+              class="burgger"
+              href="./icon-images/sprite.svg#icon-menu"
+            ></use>
+            <use
+              class="cross"
+              href="./icon-images/sprite.svg#close-menu-btn"
+            ></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mobile-menu" id="menu-container" data-menu>
+        <div class="mobile-menu__container">
+          <ul class="list mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="link mobile-menu__link" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a
+                class="link mobile-menu__link mobile-menu__current"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="link mobile-menu__link" href="">Контакты</a>
+            </li>
+          </ul>
+          <!--Контакти-->
+          <ul class="mobile-contacts list">
+            <li class="mobile-contacts__item item-icon">
+              <a
+                class="link mobile-contacts__link"
+                href="mailto:info@devstudio.com"
+              >
+                <svg class="menu-contacts__icon" width="16" height="12">
+                  <use href="./icon-images/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="mobile-contacts__item item-icon">
+              <a class="link mobile-contacts__link" href="tel:+380961111111">
+                <svg class="menu-contacts__icon" width="10" height="16">
+                  <use href="./icon-images/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
     <main>
       <!-- секція головного контенту -->
       <section class="projects section">
@@ -88,7 +152,64 @@
           <ul class="list projects__list">
             <li class="card card__set projects__item">
               <div class="card__thumb">
-                <img src="./images2/technokr.jpg" alt="laptop" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/projects/project_desktop1@1x.jpg 1x,
+                      ./images/desktop/projects/project_desktop1@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/projects/project_tablet1@1x.jpg 1x,
+                      ./images/tablet/projects/project_tablet1@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/projects/project_mobile1@1x.jpg 1x,
+                      ./images/mobile/projects/project_mobile1@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/desktop/projects/project_desktop1@1x.webp 1x,
+                      ./images/desktop/projects/project_desktop1@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/projects/project_tablet1@1x.webp 1x,
+                      ./images/tablet/projects/project_tablet1@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/projects/project_mobile1@1x.webp 1x,
+                      ./images/mobile/projects/project_mobile1@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/mobile/projects/project_mobile1@1x.jpg"
+                    alt="лептоп"
+                    width="450"
+                    height="294"
+                  />
+                </picture>
+
                 <div class="card__overlay">
                   <div class="card__action">
                     <p class="list card__hover">
@@ -108,7 +229,63 @@
             </li>
             <li class="card card__set projects__item">
               <div class="card__thumb">
-                <img src="./images2/poster.jpg" alt="poster" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/projects/project_desktop2@1x.jpg 1x,
+                      ./images/desktop/projects/project_desktop2@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/projects/project_tablet2@1x.jpg 1x,
+                      ./images/tablet/projects/project_tablet2@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/projects/project_mobile2@1x.jpg 1x,
+                      ./images/mobile/projects/project_mobile2@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/desktop/projects/project_desktop2@1x.webp 1x,
+                      ./images/desktop/projects/project_desktop2@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/projects/project_tablet2@1x.webp 1x,
+                      ./images/tablet/projects/project_tablet2@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/projects/project_mobile2@1x.webp 1x,
+                      ./images/mobile/projects/project_mobile2@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/mobile/projects/project_mobile2@1x.jpg"
+                    alt="баскетболист"
+                    width="450"
+                    height="294"
+                  />
+                </picture>
                 <div class="card__overlay">
                   <div class="card__action">
                     <p class="list card__hover">
@@ -128,11 +305,63 @@
             </li>
             <li class="card card__set projects__item">
               <div class="card__thumb">
-                <img
-                  src="./images2/seafood.jpg"
-                  alt="the name of the restaurant"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/projects/project_desktop3@1x.jpg 1x,
+                      ./images/desktop/projects/project_desktop3@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/projects/project_tablet3@1x.jpg 1x,
+                      ./images/tablet/projects/project_tablet3@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/projects/project_mobile3@1x.jpg 1x,
+                      ./images/mobile/projects/project_mobile3@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/desktop/projects/project_desktop3@1x.webp 1x,
+                      ./images/desktop/projects/project_desktop3@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/projects/project_tablet3@1x.webp 1x,
+                      ./images/tablet/projects/project_tablet3@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/projects/project_mobile3@1x.webp 1x,
+                      ./images/mobile/projects/project_mobile3@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/mobile/projects/project_mobile3@1x.jpg"
+                    alt="логотип"
+                    width="450"
+                    height="294"
+                  />
+                </picture>
                 <div class="card__overlay">
                   <div class="card__action">
                     <p class="list card__hover">
@@ -152,7 +381,63 @@
             </li>
             <li class="card card__set projects__item">
               <div class="card__thumb">
-                <img src="./images2/prime.jpg" alt="headphone" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/projects/project_desktop4@1x.jpg 1x,
+                      ./images/desktop/projects/project_desktop4@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/projects/project_tablet4@1x.jpg 1x,
+                      ./images/tablet/projects/project_tablet4@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/projects/project_mobile4@1x.jpg 1x,
+                      ./images/mobile/projects/project_mobile4@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/desktop/projects/project_desktop4@1x.webp 1x,
+                      ./images/desktop/projects/project_desktop4@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/projects/project_tablet4@1x.webp 1x,
+                      ./images/tablet/projects/project_tablet4@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/projects/project_mobile4@1x.webp 1x,
+                      ./images/mobile/projects/project_mobile4@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/mobile/projects/project_mobile4@1x.jpg"
+                    alt="наушники"
+                    width="450"
+                    height="294"
+                  />
+                </picture>
                 <div class="card__overlay">
                   <div class="card__action">
                     <p class="list card__hover">
@@ -172,7 +457,63 @@
             </li>
             <li class="card card__set projects__item">
               <div class="card__thumb">
-                <img src="./images2/boxes.jpg" alt="boxes" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/projects/project_desktop5@1x.jpg 1x,
+                      ./images/desktop/projects/project_desktop5@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/projects/project_tablet5@1x.jpg 1x,
+                      ./images/tablet/projects/project_tablet5@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/projects/project_mobile5@1x.jpg 1x,
+                      ./images/mobile/projects/project_mobile5@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/desktop/projects/project_desktop5@1x.webp 1x,
+                      ./images/desktop/projects/project_desktop5@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/projects/project_tablet5@1x.webp 1x,
+                      ./images/tablet/projects/project_tablet5@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/projects/project_mobile5@1x.webp 1x,
+                      ./images/mobile/projects/project_mobile5@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/mobile/projects/project_mobile5@1x.jpg"
+                    alt="коробки"
+                    width="450"
+                    height="294"
+                  />
+                </picture>
                 <div class="card__overlay">
                   <div class="card__action">
                     <p class="list card__hover">
@@ -192,7 +533,63 @@
             </li>
             <li class="card card__set projects__item">
               <div class="card__thumb">
-                <img src="./images2/borders.jpg" alt="monitor" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/projects/project_desktop6@1x.jpg 1x,
+                      ./images/desktop/projects/project_desktop6@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/projects/project_tablet6@1x.jpg 1x,
+                      ./images/tablet/projects/project_tablet6@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/projects/project_mobile6@1x.jpg 1x,
+                      ./images/mobile/projects/project_mobile6@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/desktop/projects/project_desktop6@1x.webp 1x,
+                      ./images/desktop/projects/project_desktop6@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/projects/project_tablet6@1x.webp 1x,
+                      ./images/tablet/projects/project_tablet6@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/projects/project_mobile6@1x.webp 1x,
+                      ./images/mobile/projects/project_mobile6@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/mobile/projects/project_mobile6@1x.jpg"
+                    alt="монитор"
+                    width="450"
+                    height="294"
+                  />
+                </picture>
                 <div class="card__overlay">
                   <div class="card__action">
                     <p class="list card__hover">
@@ -212,7 +609,63 @@
             </li>
             <li class="card card__set projects__item">
               <div class="card__thumb">
-                <img src="./images2/edition.jpg" alt="magazine" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/projects/project_desktop7@1x.jpg 1x,
+                      ./images/desktop/projects/project_desktop7@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/projects/project_tablet7@1x.jpg 1x,
+                      ./images/tablet/projects/project_tablet7@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/projects/project_mobile7@1x.jpg 1x,
+                      ./images/mobile/projects/project_mobile7@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/desktop/projects/project_desktop7@1x.webp 1x,
+                      ./images/desktop/projects/project_desktop7@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/projects/project_tablet7@1x.webp 1x,
+                      ./images/tablet/projects/project_tablet7@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/projects/project_mobile7@1x.webp 1x,
+                      ./images/mobile/projects/project_mobile7@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/mobile/projects/project_mobile7@1x.jpg"
+                    alt="открытий журнал"
+                    width="450"
+                    height="294"
+                  />
+                </picture>
                 <div class="card__overlay">
                   <div class="card__action">
                     <p class="list card__hover">
@@ -232,7 +685,63 @@
             </li>
             <li class="card card__set projects__item">
               <div class="card__thumb">
-                <img src="./images2/lab.jpg" alt="lable" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/projects/project_desktop8@1x.jpg 1x,
+                      ./images/desktop/projects/project_desktop8@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/projects/project_tablet8@1x.jpg 1x,
+                      ./images/tablet/projects/project_tablet8@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/projects/project_mobile8@1x.jpg 1x,
+                      ./images/mobile/projects/project_mobile8@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/desktop/projects/project_desktop8@1x.webp 1x,
+                      ./images/desktop/projects/project_desktop8@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/projects/project_tablet8@1x.webp 1x,
+                      ./images/tablet/projects/project_tablet8@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/projects/project_mobile8@1x.webp 1x,
+                      ./images/mobile/projects/project_mobile8@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/mobile/projects/project_mobile8@1x.jpg"
+                    alt="назва проекта"
+                    width="450"
+                    height="294"
+                  />
+                </picture>
                 <div class="card__overlay">
                   <div class="card__action">
                     <p class="list card__hover">
@@ -252,11 +761,63 @@
             </li>
             <li class="card card__set projects__item">
               <div class="card__thumb">
-                <img
-                  src="./images2/growing.jpg"
-                  alt="hands on the keyboard"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/projects/project_desktop9@1x.jpg 1x,
+                      ./images/desktop/projects/project_desktop9@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/projects/project_tablet9@1x.jpg 1x,
+                      ./images/tablet/projects/project_tablet9@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/projects/project_mobile9@1x.jpg 1x,
+                      ./images/mobile/projects/project_mobile9@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/desktop/projects/project_desktop9@1x.webp 1x,
+                      ./images/desktop/projects/project_desktop9@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/projects/project_tablet9@1x.webp 1x,
+                      ./images/tablet/projects/project_tablet9@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/projects/project_mobile9@1x.webp 1x,
+                      ./images/mobile/projects/project_mobile9@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/mobile/projects/project_mobile9@1x.jpg"
+                    alt="руки на клавиатуре"
+                    width="450"
+                    height="294"
+                  />
+                </picture>
                 <div class="card__overlay">
                   <div class="card__action">
                     <p class="list card__hover">
@@ -411,5 +972,6 @@
         </form>
       </div>
     </footer>
+    <script src="./modal/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,4 +1,6 @@
 .hero-header {
+  position: relative;
+
   &--border {
     border-bottom: 1px solid #ececec;
   }
@@ -21,13 +23,4 @@
 }
 .hero-header__menu-contacts {
   margin-left: auto;
-}
-
-.menu-btn {
-  width: 40px;
-  height: 40px;
-  background-color: violet;
-}
-.icon-menu-btn {
-  stroke: #000;
 }

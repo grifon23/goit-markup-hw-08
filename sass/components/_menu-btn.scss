@@ -1,0 +1,43 @@
+.menu-btn {
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-btn .cross {
+  display: none;
+}
+.menu-btn.is-open .cross {
+  display: block;
+}
+.menu-btn.is-open .burgger {
+  display: none;
+}
+.menu-btn:hover .burgger,
+.menu-btn:focus .burgger {
+  fill: var(--accent-cl);
+}
+.burgger {
+  transition-property: fill;
+  transition-duration: var(--timing-function);
+  transition-timing-function: var(--transition-function);
+}
+.cross {
+  transition-property: fill;
+  transition-duration: var(--timing-function);
+  transition-timing-function: var(--transition-function);
+}
+.menu-btn:hover .cross,
+.menu-btn:focus .cross {
+  fill: var(--accent-cl);
+}
