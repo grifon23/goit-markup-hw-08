@@ -82,51 +82,71 @@
           </svg>
         </button>
       </div>
-      <div class="mobile-menu" id="menu-container" data-menu>
-        <div class="mobile-menu__container">
-          <ul class="list mobile-menu__list">
-            <li class="mobile-menu__item">
-              <a
-                class="link mobile-menu__link mobile-menu__current"
-                href="./index.html"
-                >Студия</a
-              >
-            </li>
-            <li class="mobile-menu__item">
-              <a class="link mobile-menu__link" href="./portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="mobile-menu__item">
-              <a class="link mobile-menu__link" href="">Контакты</a>
-            </li>
-          </ul>
-          <!--Контакти-->
-          <ul class="mobile-contacts list">
-            <li class="mobile-contacts__item item-icon">
-              <a
-                class="link mobile-contacts__link"
-                href="mailto:info@devstudio.com"
-              >
-                <svg class="menu-contacts__icon" width="16" height="12">
-                  <use href="./icon-images/sprite.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="mobile-contacts__item item-icon">
-              <a class="link mobile-contacts__link" href="tel:+380961111111">
-                <svg class="menu-contacts__icon" width="10" height="16">
-                  <use href="./icon-images/sprite.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
     </header>
-
+    <!-- мобільне меню -->
+    <div class="mobile-menu" id="menu-container" data-menu>
+      <div class="mobile-menu__container">
+        <ul class="list mobile-menu__list">
+          <li class="mobile-menu__item list">
+            <a
+              class="link mobile-menu__link mobile-menu__current"
+              href="./index.html"
+              >Студия</a
+            >
+          </li>
+          <li class="mobile-menu__item list">
+            <a class="link mobile-menu__link" href="./portfolio.html"
+              >Портфолио</a
+            >
+          </li>
+          <li class="mobile-menu__item list">
+            <a class="link mobile-menu__link" href="">Контакты</a>
+          </li>
+        </ul>
+        <!--Контакти-->
+        <ul class="mobile-contacts list">
+          <li class="mobile-contacts__item item-icon">
+            <a class="link mobile-contacts__link-tel" href="tel:+380961111111">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-contacts__item item-icon">
+            <a
+              class="link mobile-contacts__link-mail"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-menu__social list">
+          <li class="mobile-menu__item-social">
+            <a
+              href="#"
+              class="link mobile-menu__social-link mobile-menu__social-between"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile-menu__item-social">
+            <a
+              href="#"
+              class="link mobile-menu__social-link mobile-menu__social-between"
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile-menu__item-social">
+            <a
+              href="#"
+              class="link mobile-menu__social-link mobile-menu__social-between"
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile-menu__item-social">
+            <a href="#" class="link mobile-menu__social-link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <main>
       <!--Секція з фоном-->
 
@@ -957,7 +977,7 @@
         <form class="mailing footer__form">
           <div class="mailing__e-mail">
             <div class="mailing__sign">
-              <h3 class="ft-title footer__title">Подпишитесь на рассылку</h3>
+              <label for="sign" class="ft-title">Подпишитесь на рассылку</label>
               <input
                 class="mailing__input"
                 type="email"
